@@ -1,0 +1,29 @@
+{
+  "dataset": "adult",
+  "model": "lr",
+  "debias_method": "threshold_optimizer",
+  "seed": 4,
+  "sensitive_col": "sex",
+  "accuracy": 0.8332,
+  "dp_diff": 0.0116,
+  "eo_diff": -0.2902,
+  "eod_diff": 0.2902,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 3190,
+      "selection_rate": 0.15830721003134796,
+      "accuracy": 0.8924764890282132,
+      "tpr": 0.7484662576687117,
+      "fpr": 0.09113128491620112
+    },
+    {
+      "group": 1,
+      "n": 6579,
+      "selection_rate": 0.16993464052287582,
+      "accuracy": 0.8045295637634899,
+      "tpr": 0.45825049701789267,
+      "fpr": 0.042916575432450185
+    }
+  ]
+}

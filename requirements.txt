@@ -1,0 +1,11 @@
+scikit-learn>=1.5
+fairlearn>=0.10
+xgboost>=2.0
+pandas>=2.0
+numpy>=1.26
+matplotlib>=3.8
+seaborn>=0.13
+# torch is installed separately via PyTorch wheel index (CUDA build):
+#   pip install torch --index-url https://download.pytorch.org/whl/cu121
+rtdl_revisiting_models>=0.0.2
+rtdl_num_embeddings>=0.0.11

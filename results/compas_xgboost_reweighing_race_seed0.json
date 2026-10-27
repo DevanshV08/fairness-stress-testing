@@ -1,0 +1,33 @@
+{
+  "dataset": "compas",
+  "model": "xgboost",
+  "debias_method": "reweighing",
+  "seed": 0,
+  "sensitive_col": "race",
+  "accuracy": 0.6326,
+  "dp_diff": 0.2194,
+  "eo_diff": 0.1432,
+  "eod_diff": 0.2343,
+  "auc": 0.6635,
+  "ece": 0.0954,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 633,
+      "selection_rate": 0.5134281200631912,
+      "accuracy": 0.6287519747235387,
+      "tpr": 0.6530612244897959,
+      "fpr": 0.39233038348082594,
+      "ece": 0.11343350922778037
+    },
+    {
+      "group": 1,
+      "n": 423,
+      "selection_rate": 0.7328605200945626,
+      "accuracy": 0.6382978723404256,
+      "tpr": 0.7962264150943397,
+      "fpr": 0.6265822784810127,
+      "ece": 0.10225073349261413
+    }
+  ]
+}

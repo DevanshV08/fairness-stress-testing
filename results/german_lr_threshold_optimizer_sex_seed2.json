@@ -1,0 +1,29 @@
+{
+  "dataset": "german",
+  "model": "lr",
+  "debias_method": "threshold_optimizer",
+  "seed": 2,
+  "sensitive_col": "sex",
+  "accuracy": 0.67,
+  "dp_diff": -0.13,
+  "eo_diff": -0.1955,
+  "eod_diff": 0.1955,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 56,
+      "selection_rate": 0.8035714285714286,
+      "accuracy": 0.7321428571428571,
+      "tpr": 0.9166666666666666,
+      "fpr": 0.6
+    },
+    {
+      "group": 1,
+      "n": 144,
+      "selection_rate": 0.6736111111111112,
+      "accuracy": 0.6458333333333334,
+      "tpr": 0.7211538461538461,
+      "fpr": 0.55
+    }
+  ]
+}

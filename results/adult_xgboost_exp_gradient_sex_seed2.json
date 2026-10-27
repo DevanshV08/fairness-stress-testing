@@ -1,0 +1,29 @@
+{
+  "dataset": "adult",
+  "model": "xgboost",
+  "debias_method": "exp_gradient",
+  "seed": 2,
+  "sensitive_col": "sex",
+  "accuracy": 0.8567,
+  "dp_diff": 0.0413,
+  "eo_diff": -0.2803,
+  "eod_diff": 0.2803,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 3195,
+      "selection_rate": 0.13990610328638498,
+      "accuracy": 0.9205007824726135,
+      "tpr": 0.7915407854984894,
+      "fpr": 0.06459497206703911
+    },
+    {
+      "group": 1,
+      "n": 6574,
+      "selection_rate": 0.18116823851536357,
+      "accuracy": 0.8256769090355948,
+      "tpr": 0.5112107623318386,
+      "fpr": 0.03612874972629735
+    }
+  ]
+}

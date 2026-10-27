@@ -1,0 +1,33 @@
+{
+  "dataset": "compas",
+  "model": "lr",
+  "debias_method": "reweighing",
+  "seed": 4,
+  "sensitive_col": "race",
+  "accuracy": 0.6894,
+  "dp_diff": 0.2325,
+  "eo_diff": 0.1089,
+  "eod_diff": 0.2617,
+  "auc": 0.7514,
+  "ece": 0.0693,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 625,
+      "selection_rate": 0.5216,
+      "accuracy": 0.696,
+      "tpr": 0.7361111111111112,
+      "fpr": 0.33827893175074186,
+      "ece": 0.08654215386980518
+    },
+    {
+      "group": 1,
+      "n": 431,
+      "selection_rate": 0.7540603248259861,
+      "accuracy": 0.679814385150812,
+      "tpr": 0.8450184501845018,
+      "fpr": 0.6,
+      "ece": 0.052179971064936506
+    }
+  ]
+}

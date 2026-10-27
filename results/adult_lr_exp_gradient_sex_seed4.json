@@ -1,0 +1,29 @@
+{
+  "dataset": "adult",
+  "model": "lr",
+  "debias_method": "exp_gradient",
+  "seed": 4,
+  "sensitive_col": "sex",
+  "accuracy": 0.8361,
+  "dp_diff": 0.0235,
+  "eo_diff": -0.2614,
+  "eod_diff": 0.2614,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 3190,
+      "selection_rate": 0.14169278996865203,
+      "accuracy": 0.9015673981191222,
+      "tpr": 0.7116564417177914,
+      "fpr": 0.07681564245810056
+    },
+    {
+      "group": 1,
+      "n": 6579,
+      "selection_rate": 0.16522267821857425,
+      "accuracy": 0.8043775649794802,
+      "tpr": 0.45029821073558646,
+      "fpr": 0.03963214363915043
+    }
+  ]
+}

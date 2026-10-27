@@ -1,0 +1,29 @@
+{
+  "dataset": "compas",
+  "model": "lr",
+  "debias_method": "threshold_optimizer",
+  "seed": 1,
+  "sensitive_col": "race",
+  "accuracy": 0.6515,
+  "dp_diff": -0.0233,
+  "eo_diff": -0.0725,
+  "eod_diff": 0.0725,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 626,
+      "selection_rate": 0.6070287539936102,
+      "accuracy": 0.646964856230032,
+      "tpr": 0.7694915254237288,
+      "fpr": 0.4622356495468278
+    },
+    {
+      "group": 1,
+      "n": 430,
+      "selection_rate": 0.5837209302325581,
+      "accuracy": 0.6581395348837209,
+      "tpr": 0.696969696969697,
+      "fpr": 0.4036144578313253
+    }
+  ]
+}

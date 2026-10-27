@@ -1,0 +1,33 @@
+{
+  "dataset": "german",
+  "model": "rf",
+  "debias_method": "reweighing",
+  "seed": 1,
+  "sensitive_col": "sex",
+  "accuracy": 0.745,
+  "dp_diff": 0.0313,
+  "eo_diff": 0.0575,
+  "eod_diff": 0.125,
+  "auc": 0.7868,
+  "ece": 0.0137,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 61,
+      "selection_rate": 0.8032786885245902,
+      "accuracy": 0.639344262295082,
+      "tpr": 0.8648648648648649,
+      "fpr": 0.7083333333333334,
+      "ece": 0.057970173041894335
+    },
+    {
+      "group": 1,
+      "n": 139,
+      "selection_rate": 0.8345323741007195,
+      "accuracy": 0.7913669064748201,
+      "tpr": 0.9223300970873787,
+      "fpr": 0.5833333333333334,
+      "ece": 0.03804227255658697
+    }
+  ]
+}

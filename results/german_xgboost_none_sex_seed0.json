@@ -1,0 +1,33 @@
+{
+  "dataset": "german",
+  "model": "xgboost",
+  "debias_method": "none",
+  "seed": 0,
+  "sensitive_col": "sex",
+  "accuracy": 0.78,
+  "dp_diff": 0.1101,
+  "eo_diff": 0.1209,
+  "eod_diff": 0.1209,
+  "auc": 0.789,
+  "ece": 0.1606,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 54,
+      "selection_rate": 0.6296296296296297,
+      "accuracy": 0.6851851851851852,
+      "tpr": 0.7575757575757576,
+      "fpr": 0.42857142857142855,
+      "ece": 0.12187745570446606
+    },
+    {
+      "group": 1,
+      "n": 146,
+      "selection_rate": 0.7397260273972602,
+      "accuracy": 0.815068493150685,
+      "tpr": 0.8785046728971962,
+      "fpr": 0.358974358974359,
+      "ece": 0.140821262899059
+    }
+  ]
+}

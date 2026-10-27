@@ -1,0 +1,29 @@
+{
+  "dataset": "compas",
+  "model": "rf",
+  "debias_method": "exp_gradient",
+  "seed": 3,
+  "sensitive_col": "race",
+  "accuracy": 0.6231,
+  "dp_diff": 0.1524,
+  "eo_diff": 0.1297,
+  "eod_diff": 0.1303,
+  "per_group": [
+    {
+      "group": 0,
+      "n": 644,
+      "selection_rate": 0.5077639751552795,
+      "accuracy": 0.6133540372670807,
+      "tpr": 0.6234177215189873,
+      "fpr": 0.39634146341463417
+    },
+    {
+      "group": 1,
+      "n": 412,
+      "selection_rate": 0.6601941747572816,
+      "accuracy": 0.6383495145631068,
+      "tpr": 0.7530864197530864,
+      "fpr": 0.5266272189349113
+    }
+  ]
+}
